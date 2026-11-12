@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en" dir="ltr" data-theme="dark">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Sign in | Signalroom Studios</title>
+  <meta name="description" content="Sign in to manage your studio bookings and invoices.">
+  <meta name="robots" content="noindex">
+  <link rel="icon" href="public/assets/logo/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700&family=Cairo:wght@400;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <script>
+    (function () {
+      var r = document.documentElement;
+      try {
+        var t = localStorage.getItem('sr-theme') || (matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'dark');
+        var d = localStorage.getItem('sr-dir') || 'ltr';
+        r.setAttribute('data-theme', t); r.setAttribute('dir', d); r.setAttribute('lang', d === 'rtl' ? 'ar' : 'en');
+      } catch (e) {}
+    })();
+  </script>
+  <link rel="stylesheet" href="public/css/styles.css">
+</head>
+<body class="app auth-page">
+  <a class="skip-link" href="#main">Skip to content</a>
+  <main id="main" class="auth">
+    <section class="auth__panel">
+      <header class="auth__top">
+        <a class="brand" href="index.html" aria-label="Signalroom Studios"><span class="ico" data-icon="logo"></span><span>Signalroom<span class="brand__suffix"> Studios</span></span></a>
+        <div class="auth__tools"><button type="button" class="icon-btn" data-theme-toggle></button><button type="button" class="icon-btn" data-dir-toggle></button></div>
+      </header>
+      <div class="auth__banner" aria-hidden="true"></div>
+      <div class="auth__card">
+        <div id="view-signin">
+          <p class="eyebrow"><span class="tally"></span><span>Client portal</span></p>
+          <h1>Welcome back</h1>
+          <p class="lead">Sign in to manage your studio bookings and invoices.</p>
+          <button type="button" class="btn btn-ghost btn-block btn-google" id="google"><span class="ico" data-icon="google"></span><span class="btn__t">Continue with Google</span></button>
+          <p class="divider"><span>or sign in with email</span></p>
+          <form id="signin" class="form-grid" novalidate>
+            <div class="field"><label for="l-email">Email</label><input id="l-email" name="email" type="email" class="input" autocomplete="email" inputmode="email" aria-describedby="e-email"><p class="field__error" id="e-email" data-error="email"></p></div>
+            <div class="field"><label for="l-pw">Password</label>
+              <div class="pw"><input id="l-pw" name="password" type="password" class="input" autocomplete="current-password" aria-describedby="e-pw"><button type="button" class="pw__btn" data-toggle-pw aria-pressed="false" aria-label="Show password"></button></div>
+              <p class="field__error" id="e-pw" data-error="password"></p></div>
+            <div class="auth__row"><label class="check check--plain"><input type="checkbox" name="remember"><span>Remember me</span></label><button type="button" class="linkbtn" data-forgot>Forgot password?</button></div>
+            <p id="msg" class="form-note" role="alert" hidden></p>
+            <button type="submit" class="btn btn-block" id="signin-btn"><span class="spin" aria-hidden="true"></span><span class="btn__t">Sign in</span></button>
+          </form>
+        </div>
+        <div id="view-forgot" hidden>
+          <p class="eyebrow"><span>Password help</span></p>
+          <h1>Reset your password</h1>
+          <p class="lead">Enter your email and we will send you a link to choose a new password.</p>
+          <form id="reset" class="form-grid" novalidate>
+            <div class="field"><label for="r-email">Email</label><input id="r-email" name="email" type="email" class="input" autocomplete="email" inputmode="email" aria-describedby="e-remail"><p class="field__error" id="e-remail" data-error="email"></p></div>
+            <p id="rmsg" class="form-note" role="status" hidden></p>
+            <button type="submit" class="btn btn-block" id="reset-btn"><span class="spin" aria-hidden="true"></span><span class="btn__t">Send reset link</span></button>
+            <button type="button" class="btn btn-ghost btn-block" data-back><span>Back to sign in</span></button>
+          </form>
+        </div>
+      </div>
+      <p class="auth__foot"><span>Need an account?</span> <a href="contact.html">Contact the studio</a></p>
+    </section>
+    <aside class="auth__visual" aria-label="Studio overview">
+      <img src="public/assets/img/app-login.jpg" srcset="public/assets/img/app-login-sm.jpg 960w, public/assets/img/app-login.jpg 1920w" sizes="(min-width: 64rem) 55vw, 0px" alt="Vintage steel broadcast microphone against a dark background" fetchpriority="high" decoding="async">
+      <div class="auth__shade"></div>
+      <div class="auth__copy">
+        <p class="eyebrow"><span class="tally"></span><span>Studios open today</span></p>
+        <h2>Every session, one place</h2>
+        <ul class="ticks"><li><span class="ico" data-icon="check"></span><span>Book rooms and add crew in minutes</span></li><li><span class="ico" data-icon="check"></span><span>Track upcoming and past sessions</span></li><li><span class="ico" data-icon="check"></span><span>Download invoices whenever you need them</span></li></ul>
+      </div>
+    </aside>
+  </main>
+  <script type="module" src="public/js/app/login.js"></script>
+</body>
+</html>

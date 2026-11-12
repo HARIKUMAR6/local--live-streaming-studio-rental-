@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="en" dir="ltr" data-theme="dark">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Pricing | Signalroom Studios</title>
+  <meta name="description" content="Simple studio rental packages with included facilities, add-ons and booking terms. Session, half-day and full-day rates.">
+  <meta property="og:title" content="Pricing | Signalroom Studios">
+  <meta property="og:description" content="Simple studio rental packages with included facilities, add-ons and booking terms. Session, half-day and full-day rates.">
+  <meta property="og:type" content="website">
+  <link rel="icon" href="public/assets/logo/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700&family=Cairo:wght@400;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <script>
+    (function () {
+      var r = document.documentElement;
+      try {
+        var t = localStorage.getItem('sr-theme') || (matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'dark');
+        var d = localStorage.getItem('sr-dir') || 'ltr';
+        r.setAttribute('data-theme', t); r.setAttribute('dir', d); r.setAttribute('lang', d === 'rtl' ? 'ar' : 'en');
+      } catch (e) {}
+    })();
+  </script>
+  <link rel="stylesheet" href="public/css/styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <div id="site-header"></div>
+  <main id="main">
+
+    <section class="hero hero--page hero--pricing" aria-labelledby="h1-title">
+      <div class="hero__media"><img src="public/assets/img/p-hero.jpg" srcset="public/assets/img/p-hero-sm.jpg 960w, public/assets/img/p-hero.jpg 1920w" sizes="100vw" alt="Flat lay of film and digital cameras, a drone, a lantern and printed photographs on a wooden table" fetchpriority="high" decoding="async"></div>
+      <div class="hero__shade"></div>
+      <div class="container-studio hero__inner">
+        <div class="hero__copy">
+          <p class="eyebrow"><span class="tally"></span><span>Rates from $120 per hour</span></p>
+          <h1 id="h1-title">Simple rates, nothing hidden</h1>
+          <p class="lead">Every package includes the room, house lighting and audio, and a broadcast engineer.</p>
+          <div class="cta-row"><a class="btn" href="#packages"><span>See packages</span><span data-icon="arrow"></span></a><a class="btn btn-outline-light" href="contact.html"><span>Get a quote</span></a></div>
+        </div>
+        <aside class="hero__card" aria-label="Rate summary"><p class="eyebrow">Session rate</p><b>$120/h</b>
+          <ul><li><span>Half-Day (4 h)</span><span>$420</span></li><li><span>Full Day (8 h)</span><span>$780</span></li><li><span>Minimum booking</span><span>2 h</span></li></ul></aside>
+      </div>
+    </section>
+
+    <section class="section" id="packages">
+      <div class="container-studio">
+        <header class="sec-head"><p class="eyebrow">Rental packages</p><h2>Choose how long you need</h2></header>
+        <div class="rates">
+        <article class="rate">
+          <div class="rate__name"><h3>Session</h3></div>
+          <ul class="ticks"><li><span data-icon="check"></span><span>Any studio</span></li><li><span data-icon="check"></span><span>House lighting and audio</span></li><li><span data-icon="check"></span><span>Engineer on site</span></li></ul>
+          <p class="rate__price">$120 <small>/ hour &middot; 2 h min</small></p>
+          <div class="rate__cta"><a class="btn btn-ghost" href="contact.html"><span>Book a session</span><span data-icon="arrow"></span></a></div>
+        </article>
+        <article class="rate rate--featured">
+          <div class="rate__name"><span class="badge">Most booked</span><h3>Half-Day</h3></div>
+          <ul class="ticks"><li><span data-icon="check"></span><span>Everything in Session</span></li><li><span data-icon="check"></span><span>Multicamera crew</span></li><li><span data-icon="check"></span><span>Live stream encoding</span></li></ul>
+          <p class="rate__price">$420 <small>/ 4 hours</small></p>
+          <div class="rate__cta"><a class="btn" href="contact.html"><span>Book half-day</span><span data-icon="arrow"></span></a></div>
+        </article>
+        <article class="rate">
+          <div class="rate__name"><h3>Full Day</h3></div>
+          <ul class="ticks"><li><span data-icon="check"></span><span>Everything in Half-Day</span></li><li><span data-icon="check"></span><span>Two camera operators</span></li><li><span data-icon="check"></span><span>Same-day edit review</span></li></ul>
+          <p class="rate__price">$780 <small>/ 8 hours</small></p>
+          <div class="rate__cta"><a class="btn btn-ghost" href="contact.html"><span>Book full day</span><span data-icon="arrow"></span></a></div>
+        </article></div>
+      </div>
+    </section>
+
+    <section class="section band" id="compare">
+      <div class="container-studio">
+        <header class="sec-head"><p class="eyebrow">Compare</p><h2>What each package includes</h2></header>
+        <div class="table-wrap"><table class="compare"><caption>Package comparison</caption>
+          <thead><tr><th scope="col">Included</th><th scope="col">Session</th><th scope="col" class="is-featured">Half-Day</th><th scope="col">Full Day</th></tr></thead>
+          <tbody>
+            <tr><th scope="row">Studio time</th><td>2 h minimum</td><td class="is-featured">4 hours</td><td>8 hours</td></tr>
+            <tr><th scope="row">House lighting and audio</th><td><span data-icon="check"></span></td><td class="is-featured"><span data-icon="check"></span></td><td><span data-icon="check"></span></td></tr>
+            <tr><th scope="row">Engineer on site</th><td><span data-icon="check"></span></td><td class="is-featured"><span data-icon="check"></span></td><td><span data-icon="check"></span></td></tr>
+            <tr><th scope="row">Programme recording</th><td><span data-icon="check"></span></td><td class="is-featured"><span data-icon="check"></span></td><td><span data-icon="check"></span></td></tr>
+            <tr><th scope="row">Multicamera crew</th><td><span class="no">-</span></td><td class="is-featured"><span data-icon="check"></span></td><td><span data-icon="check"></span></td></tr>
+            <tr><th scope="row">Live stream encoding and backup</th><td><span class="no">-</span></td><td class="is-featured"><span data-icon="check"></span></td><td><span data-icon="check"></span></td></tr>
+            <tr><th scope="row">Raw ISO recordings</th><td><span class="no">-</span></td><td class="is-featured"><span data-icon="check"></span></td><td><span data-icon="check"></span></td></tr>
+            <tr><th scope="row">Two camera operators</th><td><span class="no">-</span></td><td class="is-featured"><span class="no">-</span></td><td><span data-icon="check"></span></td></tr>
+            <tr><th scope="row">Graphics and lower thirds</th><td><span class="no">-</span></td><td class="is-featured"><span class="no">-</span></td><td><span data-icon="check"></span></td></tr>
+            <tr><th scope="row">Same-day edit review</th><td><span class="no">-</span></td><td class="is-featured"><span class="no">-</span></td><td><span data-icon="check"></span></td></tr>
+            <tr><th scope="row">Price</th><td class="price">$120/h</td><td class="price is-featured">$420</td><td class="price">$780</td></tr>
+          </tbody></table></div>
+      </div>
+    </section>
+
+    <section class="section" id="addons">
+      <div class="container-studio split split-5-7 items-start">
+        <div class="stack">
+          <p class="eyebrow">Add-ons</p><h2>Add only what the show needs</h2>
+          <div class="frame aspect-[16/10]"><img src="public/assets/img/p-audio.jpg" srcset="public/assets/img/p-audio-sm.jpg 960w, public/assets/img/p-audio.jpg 1920w" sizes="(min-width: 64rem) 40vw, 100vw" alt="Over-ear headphones resting on top of a loudspeaker" loading="lazy" decoding="async"></div>
+        </div>
+        <ul class="rule-list"><li class="addon"><h3>Extra camera and operator</h3><span class="addon__price">$85/h</span><p>A fourth angle with a dedicated operator.</p></li><li class="addon"><h3>Teleprompter</h3><span class="addon__price">$25/h</span><p>Prompter and operator for scripted shows.</p></li><li class="addon"><h3>Graphics operator</h3><span class="addon__price">$45/h</span><p>Live titles, lower thirds and overlays.</p></li><li class="addon"><h3>Remote guest link</h3><span class="addon__price">$20 each</span><p>Low-latency link with clean return audio.</p></li><li class="addon"><h3>Same-day highlight edit</h3><span class="addon__price">$180</span><p>Social clips delivered before you leave.</p></li></ul>
+      </div>
+    </section>
+
+    <section class="section band" id="terms">
+      <div class="container-studio">
+        <header class="sec-head"><p class="eyebrow">Booking information</p><h2>Before you book</h2></header>
+        <div class="roles"><div class="role"><span class="icon-box"><span data-icon="calendar"></span></span><div><h3>Reserve with a deposit</h3><p>A 25% deposit holds your date and is deducted from the final invoice.</p></div></div><div class="role"><span class="icon-box"><span data-icon="clock"></span></span><div><h3>Free rescheduling</h3><p>Move your session up to 48 hours before it starts at no cost.</p></div></div><div class="role"><span class="icon-box"><span data-icon="shield"></span></span><div><h3>Fair overtime</h3><p>Time beyond your booking is billed in 30-minute blocks.</p></div></div><div class="role"><span class="icon-box"><span data-icon="mail"></span></span><div><h3>Quotes in a day</h3><p>Send your brief and we reply with a fixed quote within one business day.</p></div></div></div>
+      </div>
+    </section>
+
+    <section class="cta-band" aria-labelledby="cta-title">
+      <div class="container-studio cta-band__inner">
+        <p class="eyebrow"><span class="tally"></span> <span>Slots open this week</span></p>
+        <h2 id="cta-title">Get a fixed quote</h2>
+        <p class="lead max-w-xl">Share your format and date. We confirm the price before you commit.</p>
+        <div class="cta-row cta-row--center">
+          <a class="btn" href="contact.html"><span>Request a quote</span><span data-icon="arrow"></span></a>
+          <a class="btn btn-outline-light" href="studios.html"><span>View studios</span></a>
+        </div>
+        <p class="cta-band__contact"><a data-contact="phone" href="#"></a><a data-contact="email" href="#"></a></p>
+      </div>
+    </section>
+  </main>
+  <footer id="site-footer"></footer>
+  <script type="module" src="public/js/main.js"></script>
+</body>
+</html>

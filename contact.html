@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="en" dir="ltr" data-theme="dark">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contact | Signalroom Studios</title>
+  <meta name="description" content="Contact Signalroom Studios to book a studio, request a quote or arrange a visit. Find our address, hours and map.">
+  <meta property="og:title" content="Contact | Signalroom Studios">
+  <meta property="og:description" content="Contact Signalroom Studios to book a studio, request a quote or arrange a visit. Find our address, hours and map.">
+  <meta property="og:type" content="website">
+  <link rel="icon" href="public/assets/logo/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700&family=Cairo:wght@400;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <script>
+    (function () {
+      var r = document.documentElement;
+      try {
+        var t = localStorage.getItem('sr-theme') || (matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'dark');
+        var d = localStorage.getItem('sr-dir') || 'ltr';
+        r.setAttribute('data-theme', t); r.setAttribute('dir', d); r.setAttribute('lang', d === 'rtl' ? 'ar' : 'en');
+      } catch (e) {}
+    })();
+  </script>
+  <link rel="stylesheet" href="public/css/styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <div id="site-header"></div>
+  <main id="main">
+
+    <section class="hero hero--page hero--contact" aria-labelledby="h1-title">
+      <div class="hero__media"><img src="public/assets/img/c-hero.jpg" srcset="public/assets/img/c-hero-sm.jpg 960w, public/assets/img/c-hero.jpg 1920w" sizes="100vw" alt="Quiet downtown Austin street corner with office towers and shops in late afternoon light" fetchpriority="high" decoding="async"></div>
+      <div class="hero__shade"></div>
+      <div class="container-studio hero__inner">
+        <div class="hero__copy">
+          <p class="eyebrow"><span class="tally"></span><span>We reply within a day</span></p>
+          <h1 id="h1-title">Let us plan your show</h1>
+          <p class="lead">Tell us about your format and date, or call the studio and speak to an engineer.</p>
+          <div class="cta-row"><a class="btn" href="#enquiry"><span>Send an enquiry</span><span data-icon="arrow"></span></a><a class="btn btn-outline-light" data-contact="phone" href="#"></a></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="enquiry">
+      <div class="container-studio split split-5-7 items-start">
+        <div class="stack">
+          <p class="eyebrow">Get in touch</p><h2>Talk to the studio</h2>
+          <ul class="info-list">
+            <li><span class="icon-box"><span data-icon="mapPin"></span></span><div><h3>Address</h3><address class="not-italic" data-contact="address"></address></div></li>
+            <li><span class="icon-box"><span data-icon="phone"></span></span><div><h3>Phone</h3><a data-contact="phone" href="#" dir="ltr"></a></div></li>
+            <li><span class="icon-box"><span data-icon="mail"></span></span><div><h3>Email</h3><a data-contact="email" href="#"></a></div></li>
+            <li><span class="icon-box"><span data-icon="clock"></span></span><div><h3>Opening hours</h3><p data-contact="hours"></p></div></li>
+          </ul>
+        </div>
+        <form class="form-card form-grid" data-enquiry novalidate aria-labelledby="form-title">
+          <h3 id="form-title">Send an enquiry</h3>
+          <div class="form-grid form-grid--2">
+            <div class="field"><label for="f-name">Name</label><input id="f-name" name="name" class="input" autocomplete="name" required aria-describedby="e-name"><p class="field__error" id="e-name" data-error="name"></p></div>
+            <div class="field"><label for="f-email">Email</label><input id="f-email" name="email" type="email" class="input" autocomplete="email" required aria-describedby="e-email"><p class="field__error" id="e-email" data-error="email"></p></div>
+            <div class="field"><label for="f-phone">Phone (optional)</label><input id="f-phone" name="phone" type="tel" class="input" autocomplete="tel"></div>
+            <div class="field"><label for="f-studio">Studio</label><select id="f-studio" name="studio" class="input select"><option value="talk">Talk Suite</option><option value="cyclorama">Cyclorama Stage</option><option value="chroma">Chroma Room</option><option value="audio">Audio Suite</option><option value="unsure">Not sure yet</option></select></div>
+            <div class="field span-2"><label for="f-date">Preferred date</label><input id="f-date" name="date" type="date" class="input"></div>
+            <div class="field span-2"><label for="f-message">Your show</label><textarea id="f-message" name="message" class="input" rows="5" required aria-describedby="e-message" placeholder="Format, guests, length and anything else we should know"></textarea><p class="field__error" id="e-message" data-error="message"></p></div>
+          </div>
+          <div class="form-actions"><button class="btn" type="submit"><span>Send enquiry</span><span data-icon="arrow"></span></button><p class="meta">We only use your details to reply to this enquiry.</p></div>
+          <p class="form-status" data-status role="status" hidden></p>
+        </form>
+      </div>
+    </section>
+
+    <section class="section band" id="visit">
+      <div class="container-studio">
+        <header class="sec-head"><p class="eyebrow">Visit us</p><h2>Find the studios</h2></header>
+        <div class="visit">
+          <div class="stack">
+            <div class="frame"><img src="public/assets/img/c-visit.jpg" srcset="public/assets/img/c-visit-sm.jpg 960w, public/assets/img/c-visit.jpg 1920w" sizes="(min-width: 64rem) 40vw, 100vw" alt="Large soundstage building with dark metal walls, a big stage number and an open concrete forecourt" loading="lazy" decoding="async"></div>
+            <ul class="info-list">
+              <li><span class="icon-box"><span data-icon="car"></span></span><div><h3>Parking</h3><p>Free on-site parking for clients and crew.</p></div></li>
+              <li><span class="icon-box"><span data-icon="truck"></span></span><div><h3>Load-in</h3><p>Drive-in access via the rear dock, by arrangement.</p></div></li>
+              <li><span class="icon-box"><span data-icon="calendar"></span></span><div><h3>Tours</h3><p>Walk-throughs by appointment, any day of the week.</p></div></li>
+            </ul>
+          </div>
+          <div class="map"><iframe title="Map showing the Signalroom Studios area in East Austin" loading="lazy" referrerpolicy="no-referrer" src="https://www.openstreetmap.org/export/embed.html?bbox=-97.7330%2C30.2560%2C-97.7030%2C30.2700&amp;layer=mapnik&amp;marker=30.2630%2C-97.7180"></iframe></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="next">
+      <div class="container-studio split split-5-7">
+        <div class="frame portrait"><img src="public/assets/img/c-next-sm.jpg" srcset="public/assets/img/c-next-sm.jpg 960w, public/assets/img/c-next.jpg 1920w" sizes="(min-width: 64rem) 40vw, 100vw" alt="Hand moving a fader on a large analogue mixing console" loading="lazy" decoding="async" class="object-[70%_50%]"></div>
+        <div>
+          <header class="sec-head"><p class="eyebrow">After you enquire</p><h2>What happens next</h2></header>
+          <ol class="steps">
+            <li><div><h3>We reply within a day</h3><p>An engineer reads your brief and answers with questions, not a sales script.</p></div></li>
+            <li><div><h3>You get a fixed quote</h3><p>Room, crew, kit and price in one message, before you commit to anything.</p></div></li>
+            <li><div><h3>We walk you through</h3><p>Visit in person or join a video call to check the room, the kit and the run of show.</p></div></li>
+            <li><div><h3>Book and go live</h3><p>Pay the deposit, lock the date and we prepare the studio for your session.</p></div></li>
+          </ol>
+        </div>
+      </div>
+    </section>
+
+    <section class="section band" id="faq">
+      <div class="container-studio split split-7-5 items-start">
+        <div>
+          <header class="sec-head"><p class="eyebrow">Before you visit</p><h2>Questions we hear most</h2></header>
+          <div class="acc">
+            <details open><summary>Do I need an appointment to visit?</summary><div><p>Yes. Tours run any day by appointment, so an engineer can show you around properly.</p></div></details>
+            <details><summary>What should I bring?</summary><div><p>Your script or run of show, brand assets on a drive and any special kit. We supply the rest.</p></div></details>
+            <details><summary>Can I test the studio before booking?</summary><div><p>Yes. Ask for a tech walk-through and we will set up cameras, lights and audio so you can judge the real result.</p></div></details>
+            <details><summary>How early should I arrive on the day?</summary><div><p>Arrive 30 minutes before your start time so we can load in and check levels.</p></div></details>
+            <details><summary>Is there Wi-Fi and power for guests?</summary><div><p>Yes. Guests get Wi-Fi and charging in the green room, and the studio runs on a dedicated fibre line.</p></div></details>
+          </div>
+        </div>
+        <div class="frame aspect-[4/3]"><img src="public/assets/img/c-faq-sm.jpg" srcset="public/assets/img/c-faq-sm.jpg 960w, public/assets/img/c-faq.jpg 1920w" sizes="(min-width: 64rem) 40vw, 100vw" alt="Digital camera with a lens resting on a wooden table in a bright room" loading="lazy" decoding="async"></div>
+      </div>
+    </section>
+  </main>
+  <footer id="site-footer"></footer>
+  <script type="module" src="public/js/main.js"></script>
+</body>
+</html>

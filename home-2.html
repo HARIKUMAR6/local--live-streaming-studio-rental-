@@ -1,0 +1,161 @@
+<!doctype html>
+<html lang="en" dir="ltr" data-theme="dark">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Signalroom Studios | Crewed Broadcast Studios by the Hour</title>
+  <meta name="description" content="Plan a crewed live streaming session: explore our rooms, build your session estimate and book a broadcast studio by the hour.">
+  <meta property="og:title" content="Signalroom Studios | Crewed Broadcast Studios by the Hour">
+  <meta property="og:description" content="Plan a crewed live streaming session: explore our rooms, build your session estimate and book a broadcast studio by the hour.">
+  <meta property="og:type" content="website">
+  <link rel="icon" href="public/assets/logo/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700&family=Cairo:wght@400;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <script>
+    (function () {
+      var r = document.documentElement;
+      try {
+        var t = localStorage.getItem('sr-theme') || (matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'dark');
+        var d = localStorage.getItem('sr-dir') || 'ltr';
+        r.setAttribute('data-theme', t); r.setAttribute('dir', d); r.setAttribute('lang', d === 'rtl' ? 'ar' : 'en');
+      } catch (e) {}
+    })();
+  </script>
+  <link rel="stylesheet" href="public/css/styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <div id="site-header"></div>
+  <main id="main">
+
+    <!-- 1. Console hero -->
+    <section class="hero hero--console" aria-labelledby="h1-title">
+      <div class="container-studio hero__inner">
+        <div class="hero__copy">
+          <p class="eyebrow"><span class="tally"></span><span>On air ready</span><span data-clock dir="ltr"></span></p>
+          <h1 id="h1-title">Studio time, switched on</h1>
+          <p class="lead">Rent a fully crewed broadcast studio by the hour. Walk in with a script and walk out with a finished stream.</p>
+          <div class="cta-row">
+            <a class="btn" href="#planner"><span>Plan your session</span><span data-icon="arrow"></span></a>
+            <a class="btn btn-outline-light" href="#rooms"><span>Meet the rooms</span></a>
+          </div>
+        </div>
+        <div class="multiview" role="group" aria-label="Studio camera multiview">
+          <div class="mon mon--pgm"><img src="public/assets/img/h2-hero.jpg" srcset="public/assets/img/h2-hero-sm.jpg 960w, public/assets/img/h2-hero.jpg 1920w" sizes="(min-width: 64rem) 58vw, 100vw" alt="Video camera on a dark stage lit by a single soft light" fetchpriority="high" decoding="async"><div class="mon__bar"><span><i class="mon__badge">PGM</i> CAM 1</span><span data-clock dir="ltr"></span></div></div>
+          <div class="mon mon--pvw"><img src="public/assets/img/h2-cameras.jpg" srcset="public/assets/img/h2-cameras-sm.jpg 960w, public/assets/img/h2-cameras.jpg 1920w" sizes="(min-width: 64rem) 29vw, 50vw" alt="Two studio cameras on pedestals in a television studio" loading="lazy" decoding="async"><div class="mon__bar"><span><i class="mon__badge mon__badge--pvw">PVW</i> CAM 2</span></div></div>
+          <div class="mon mon--pvw"><img src="public/assets/img/h2-switcher.jpg" srcset="public/assets/img/h2-switcher-sm.jpg 960w, public/assets/img/h2-switcher.jpg 1920w" sizes="(min-width: 64rem) 29vw, 50vw" alt="Vision mixer control panel with illuminated orange buttons and a fader lever" loading="lazy" decoding="async"><div class="mon__bar"><span><i class="mon__badge mon__badge--pvw">PVW</i> SWITCHER</span></div></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 2. Signal chain -->
+    <section class="section-tight band" id="chain">
+      <div class="container-studio">
+        <header class="sec-head sec-head--center"><p class="eyebrow">Signal chain</p><h2>From lens to live in four stages</h2></header>
+        <ol class="chain"><li><span class="icon-box"><span data-icon="video"></span></span><div><h3>Capture</h3><p>Broadcast and cinema cameras on motorised heads.</p></div></li><li><span class="icon-box"><span data-icon="layers"></span></span><div><h3>Switch</h3><p>Eight-input vision mixer with graphics and replay.</p></div></li><li><span class="icon-box"><span data-icon="sliders"></span></span><div><h3>Mix</h3><p>32-channel digital audio with clean remote returns.</p></div></li><li><span class="icon-box"><span data-icon="radio"></span></span><div><h3>Stream</h3><p>Encoded to every platform over dedicated fibre.</p></div></li></ol>
+      </div>
+    </section>
+
+    <!-- 3. Rooms -->
+    <section class="section" id="rooms">
+      <div class="container-studio">
+        <header class="sec-head"><p class="eyebrow">The facility</p><h2>Walk through the building</h2><p class="lead">Four working areas, all included in your booking.</p></header>
+        <div class="tabs" data-tabs>
+          <div class="tablist" role="tablist" aria-label="Facility areas"><button type="button" role="tab" class="tab" id="tab-talk" aria-controls="panel-talk" aria-selected="true"><b>Talk Suite</b><span>Up to 4 guests</span></button><button type="button" role="tab" class="tab" id="tab-control" aria-controls="panel-control" aria-selected="false"><b>Control Room</b><span>Switching &amp; monitoring</span></button><button type="button" role="tab" class="tab" id="tab-machine" aria-controls="panel-machine" aria-selected="false"><b>Machine Room</b><span>Encoding &amp; routing</span></button><button type="button" role="tab" class="tab" id="tab-grid" aria-controls="panel-grid" aria-selected="false"><b>Lighting Grid</b><span>DMX LED rigs</span></button></div>
+          <div>
+          <div role="tabpanel" class="tabpanel" id="panel-talk" aria-labelledby="tab-talk">
+            <div class="frame"><img src="public/assets/img/h2-studio.jpg" srcset="public/assets/img/h2-studio-sm.jpg 960w, public/assets/img/h2-studio.jpg 1920w" sizes="(min-width: 64rem) 36vw, 100vw" alt="Podcast studio with a round table, microphones and blue LED panels" loading="lazy" decoding="async"></div>
+            <div class="stack"><h3>Talk Suite</h3><p class="text-(--muted)">A treated round-table room with motorised cameras, per-seat microphones and a LED wall.</p><dl class="spec-grid"><div><dt>Capacity</dt><dd>4 guests + host</dd></div><div><dt>Cameras</dt><dd>3 x 4K</dd></div><div><dt>Acoustics</dt><dd>Treated, NC-20</dd></div></dl></div>
+          </div>
+          <div role="tabpanel" class="tabpanel" id="panel-control" aria-labelledby="tab-control">
+            <div class="frame"><img src="public/assets/img/h2-monitors.jpg" srcset="public/assets/img/h2-monitors-sm.jpg 960w, public/assets/img/h2-monitors.jpg 1920w" sizes="(min-width: 64rem) 36vw, 100vw" alt="Control room wall of video monitors showing multiple camera feeds" loading="lazy" decoding="async" class="object-[50%_40%]"></div>
+            <div class="stack"><h3>Control Room</h3><p class="text-(--muted)">Your engineer cuts the show from a full monitor wall with talkback to the floor.</p><dl class="spec-grid"><div><dt>Inputs</dt><dd>8 SDI / HDMI</dd></div><div><dt>Monitoring</dt><dd>Full multiview</dd></div><div><dt>Talkback</dt><dd>Floor + remote</dd></div></dl></div>
+          </div>
+          <div role="tabpanel" class="tabpanel" id="panel-machine" aria-labelledby="tab-machine">
+            <div class="frame"><img src="public/assets/img/h2-racks.jpg" srcset="public/assets/img/h2-racks-sm.jpg 960w, public/assets/img/h2-racks.jpg 1920w" sizes="(min-width: 64rem) 36vw, 100vw" alt="Rack-mounted broadcast equipment with encoders and routers" loading="lazy" decoding="async"></div>
+            <div class="stack"><h3>Machine Room</h3><p class="text-(--muted)">Encoders, routers and backup power keep every stream on air.</p><dl class="spec-grid"><div><dt>Encoding</dt><dd>Dual redundant</dd></div><div><dt>Routing</dt><dd>16 x 16 matrix</dd></div><div><dt>Power</dt><dd>UPS backed</dd></div></dl></div>
+          </div>
+          <div role="tabpanel" class="tabpanel" id="panel-grid" aria-labelledby="tab-grid">
+            <div class="frame"><img src="public/assets/img/h2-stands.jpg" srcset="public/assets/img/h2-stands-sm.jpg 960w, public/assets/img/h2-stands.jpg 1920w" sizes="(min-width: 64rem) 36vw, 100vw" alt="Black lighting stands on a wooden studio floor" loading="lazy" decoding="async"></div>
+            <div class="stack"><h3>Lighting Grid</h3><p class="text-(--muted)">Stands, rigs and DMX LED fixtures tuned for skin tones and clean backgrounds.</p><dl class="spec-grid"><div><dt>Fixtures</dt><dd>DMX LED</dd></div><div><dt>Colour temp</dt><dd>3200-5600K</dd></div><div><dt>Control</dt><dd>Scene presets</dd></div></dl></div>
+          </div></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 4. Gear -->
+    <section class="section band" id="gear">
+      <div class="container-studio split split-7-5">
+        <div class="stagger">
+          <div class="frame"><img src="public/assets/img/h2-mixer.jpg" srcset="public/assets/img/h2-mixer-sm.jpg 960w, public/assets/img/h2-mixer.jpg 1920w" sizes="(min-width: 64rem) 52vw, 100vw" alt="Close view of a broadcast audio mixer with illuminated faders and pads" loading="lazy" decoding="async"></div>
+          <div class="frame stagger__inset"><img src="public/assets/img/h2-headphones.jpg" srcset="public/assets/img/h2-headphones-sm.jpg 960w, public/assets/img/h2-headphones.jpg 1920w" sizes="(min-width: 64rem) 24vw, 48vw" alt="Studio headphones mounted on a microphone arm" loading="lazy" decoding="async"></div>
+        </div>
+        <div>
+          <header class="sec-head"><p class="eyebrow">Technical rider</p><h2>What is on the rack</h2></header>
+          <div class="acc"><details open><summary>Cameras</summary><div><p>4K broadcast and cinema cameras, PTZ units and robotic heads with full lens kits.</p></div></details><details><summary>Switching and graphics</summary><div><p>Eight-input vision mixer, lower thirds, replay and a clean-feed output for every platform.</p></div></details><details><summary>Audio</summary><div><p>32-channel digital console, broadcast microphones, in-ear monitoring and remote returns.</p></div></details><details><summary>Lighting</summary><div><p>DMX LED fixtures, softboxes and scene presets recalled at the touch of a button.</p></div></details><details><summary>Connectivity and recording</summary><div><p>1 Gbps dedicated fibre with a bonded backup, ISO recording and programme capture.</p></div></details></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 5. Estimator -->
+    <section class="section" id="planner">
+      <div class="container-studio">
+        <header class="sec-head"><p class="eyebrow">Session planner</p><h2>Build your session, see the cost</h2><p class="lead">Choose a room, set your hours and add crew. Rates are illustrative and confirmed after your brief.</p></header>
+        <form class="estimator" data-estimator action="contact.html" method="get">
+          <div class="est-controls">
+            <div class="field"><label for="est-studio">Studio</label>
+              <select id="est-studio" name="studio" class="input select"><option value="talk" data-rate="95">Talk Suite - $95/h</option><option value="cyclorama" data-rate="110">Cyclorama Stage - $110/h</option><option value="chroma" data-rate="105">Chroma Room - $105/h</option><option value="audio" data-rate="85">Audio Suite - $85/h</option></select></div>
+            <div class="field"><label for="est-hours">Hours: <b data-out="hours">4</b></label>
+              <input id="est-hours" name="hours" class="range" type="range" min="2" max="12" step="1" value="4"></div>
+            <fieldset class="field"><legend>Crew and services</legend><label class="check"><input type="checkbox" data-addon="eng" data-rate="45" checked><span>Studio engineer</span><small>+$45/h</small></label><label class="check"><input type="checkbox" data-addon="crew" data-rate="60"><span>Multicamera crew</span><small>+$60/h</small></label><label class="check"><input type="checkbox" data-addon="stream" data-rate="40"><span>Live stream encoding</span><small>+$40/h</small></label><label class="check"><input type="checkbox" data-addon="prompt" data-rate="25"><span>Teleprompter and graphics</span><small>+$25/h</small></label></fieldset>
+          </div>
+          <div class="readout" aria-live="polite">
+            <div><p class="eyebrow">Estimated total</p><p class="readout__total" data-out="total">$0</p></div>
+            <ul><li><span>Studio hire</span><span data-out="base"></span></li><li data-line="eng"><span>Studio engineer</span><span data-out="cost"></span></li><li data-line="crew" hidden><span>Multicamera crew</span><span data-out="cost"></span></li><li data-line="stream" hidden><span>Live stream encoding</span><span data-out="cost"></span></li><li data-line="prompt" hidden><span>Teleprompter and graphics</span><span data-out="cost"></span></li></ul>
+            <button class="btn" type="submit"><span>Request this booking</span><span data-icon="arrow"></span></button>
+          </div>
+        </form>
+      </div>
+    </section>
+
+    <!-- 6. Rundown -->
+    <section class="section band" id="rundown">
+      <div class="container-studio split split-5-7 items-start">
+        <div class="stack"><p class="eyebrow">Run of show</p><h2>Your booking, on a countdown</h2><p class="lead">Every session follows the same rundown, so nothing is left to the last minute.</p></div>
+        <ol class="rundown"><li><span class="rundown__tc">T-7d</span><h3>Brief and plan</h3><p>We map your format, guests and technical needs.</p></li><li><span class="rundown__tc">T-24h</span><h3>Remote check</h3><p>Test links, graphics and guest connections.</p></li><li><span class="rundown__tc">T-60m</span><h3>Load-in and line-up</h3><p>Cameras, lights and audio levelled before doors.</p></li><li class="is-live"><span class="rundown__tc">T-00</span><h3>Live</h3><p>Your engineer runs the show. You run the room.</p></li><li><span class="rundown__tc">T+24h</span><h3>Delivery</h3><p>Programme and ISO recordings in your inbox.</p></li></ol>
+      </div>
+    </section>
+
+    <!-- 7. Why -->
+    <section class="section" id="why">
+      <div class="container-studio split split-5-7 items-start">
+        <div class="stack"><p class="eyebrow">Why Signalroom</p><h2>Crewed, tuned and always on air</h2></div>
+        <ul class="statements"><li><span class="n">01</span><div><h3>Crewed, not just rented</h3><p>A broadcast engineer is on every session, so you never run the desk alone.</p></div></li><li><span class="n">02</span><div><h3>Rooms that look the part</h3><p>Treated acoustics, tuned lighting and clean backdrops ready to shoot.</p></div></li><li><span class="n">03</span><div><h3>Built to stay on air</h3><p>Redundant uplink, backup encoder and UPS power on every stream.</p></div></li></ul>
+      </div>
+    </section>
+
+    <!-- 8. FAQ + quick booking -->
+    <section class="section band" id="book" aria-labelledby="book-title">
+      <div class="container-studio split split-6-6 items-start">
+        <div>
+          <header class="sec-head"><p class="eyebrow">Questions</p><h2 id="book-title">Before you book</h2></header>
+          <div class="acc"><details open><summary>Can I bring my own crew?</summary><div><p>Yes. Dry hire is available on every room, with our engineer on standby.</p></div></details><details><summary>How far ahead should I book?</summary><div><p>Two weeks suits most shows, but we hold last-minute slots when rooms are free.</p></div></details><details><summary>Do you stream to several platforms?</summary><div><p>Yes. We push to YouTube, Twitch, LinkedIn and custom RTMP at the same time.</p></div></details></div>
+        </div>
+        <form class="qb" action="contact.html" method="get">
+          <h3>Check availability</h3>
+          <div class="qb__row">
+            <div class="field"><label for="qb-date">Date</label><input id="qb-date" name="date" type="date" class="input" required></div>
+            <div class="field"><label for="qb-studio">Studio</label><select id="qb-studio" name="studio" class="input select"><option value="talk">Talk Suite</option><option value="cyclorama">Cyclorama Stage</option><option value="chroma">Chroma Room</option><option value="audio">Audio Suite</option></select></div>
+            <div class="field"><label for="qb-hours">Hours</label><select id="qb-hours" name="hours" class="input select"><option>2</option><option>4</option><option>8</option><option>12</option></select></div>
+          </div>
+          <button class="btn" type="submit"><span>Check availability</span><span data-icon="arrow"></span></button>
+          <p class="meta text-center"><a data-contact="phone" href="#"></a></p>
+        </form>
+      </div>
+    </section>
+  </main>
+  <footer id="site-footer"></footer>
+  <script type="module" src="public/js/main.js"></script>
+</body>
+</html>

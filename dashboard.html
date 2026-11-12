@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en" dir="ltr" data-theme="dark">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Dashboard | Signalroom Studios</title>
+  <meta name="description" content="Manage your studio bookings, invoices and account.">
+  <meta name="robots" content="noindex">
+  <link rel="icon" href="public/assets/logo/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700&family=Cairo:wght@400;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <script>
+    (function () {
+      var r = document.documentElement;
+      try {
+        var t = localStorage.getItem('sr-theme') || (matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'dark');
+        var d = localStorage.getItem('sr-dir') || 'ltr';
+        r.setAttribute('data-theme', t); r.setAttribute('dir', d); r.setAttribute('lang', d === 'rtl' ? 'ar' : 'en');
+      } catch (e) {}
+    })();
+  </script>
+  <link rel="stylesheet" href="public/css/styles.css">
+</head>
+<body class="app">
+  <a class="skip-link" href="#main">Skip to content</a>
+  <div id="app"></div>
+  <div id="toasts" class="toasts" aria-live="polite"></div>
+  <dialog id="dlg" class="dlg" aria-labelledby="dlg-title"></dialog>
+  <div id="print-area" class="print-area"></div>
+  <script type="module" src="public/js/app/dashboard.js"></script>
+</body>
+</html>
