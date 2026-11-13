@@ -23,7 +23,7 @@ $('[data-toggle-pw]').addEventListener('click', (e) => {
   pw.type = show ? 'text' : 'password';
   btn.setAttribute('aria-pressed', String(show));
   const label = show ? 'Hide password' : 'Show password';
-  btn.setAttribute('data-en-aria-label', label); btn.setAttribute('aria-label', tr(label));
+  btn.setAttribute('data-en-aria-label', label); btn.setAttribute('aria-label', label);
   btn.innerHTML = show ? icons.eyeOff : icons.eye;
 });
 

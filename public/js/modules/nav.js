@@ -1,5 +1,4 @@
 import { icons } from './icons.js';
-import { ar } from '../i18n-ar.js';
 
 // Dropdowns (click only), full-screen mobile menu, Escape + outside-click closing.
 export function initNav() {
@@ -31,7 +30,7 @@ export function initNav() {
     btn.setAttribute('aria-expanded', String(open));
     const label = open ? 'Close menu' : 'Open menu';
     btn.setAttribute('data-en-aria-label', label);
-    btn.setAttribute('aria-label', document.documentElement.dir === 'rtl' ? ar[label] || label : label);
+    btn.setAttribute('aria-label', label);
     btn.innerHTML = open ? icons.close : icons.menu;
     document.documentElement.classList.toggle('menu-lock', open);
     if (!open) drops.filter((d) => menu.contains(d)).forEach((d) => setDrop(d, false));

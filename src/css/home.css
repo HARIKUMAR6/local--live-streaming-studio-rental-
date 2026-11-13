@@ -44,7 +44,6 @@
   .hero__strip li { padding: .875rem 0; display: grid; gap: .125rem; text-align: center; }
   .hero__strip li:nth-child(n+3) { border-block-start: 1px solid rgb(242 244 245 / .12); }
   .hero__strip b { font-family: var(--font-display); font-size: 1.375rem; font-weight: 600; letter-spacing: .04em; text-transform: uppercase; }
-  [dir="rtl"] .hero__strip b { font-family: "Cairo", var(--font-sans); text-transform: none; font-size: 1.125rem; }
   .hero__strip span { font-size: .8125rem; color: var(--on-media-muted); }
   @media (min-width: 64rem) {
     .hero__strip ul { grid-template-columns: repeat(4, minmax(0, 1fr)); }
@@ -83,7 +82,6 @@
   .spec-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 0; margin: 0; }
   .spec-grid > div { padding: .875rem 0; border-block-end: 1px solid var(--border); }
   .spec-grid dt { font-family: var(--font-mono); font-size: .75rem; letter-spacing: .1em; text-transform: uppercase; color: var(--muted); }
-  [dir="rtl"] .spec-grid dt { font-family: "Cairo", var(--font-sans); letter-spacing: 0; text-transform: none; }
   .spec-grid dd { margin: .125rem 0 0; font-weight: 600; }
   .spec-grid > div:nth-child(odd) { padding-inline-end: 1rem; }
 
@@ -168,7 +166,6 @@
   .tablist { display: flex; gap: .5rem; overflow-x: auto; padding-block-end: .25rem; scrollbar-width: thin; }
   .tab { flex: none; display: grid; gap: .125rem; justify-items: start; text-align: start; padding: .75rem 1.125rem; border: 1px solid var(--border); border-radius: var(--radius-sm); background: transparent; color: var(--muted); font: inherit; cursor: pointer; transition: background-color .2s, color .2s, border-color .2s; }
   .tab b { font-family: var(--font-display); font-size: 1.25rem; font-weight: 600; letter-spacing: .03em; text-transform: uppercase; color: var(--text); }
-  [dir="rtl"] .tab b { font-family: "Cairo", var(--font-sans); text-transform: none; font-size: 1.0625rem; }
   .tab span { font-family: var(--font-mono); font-size: .75rem; letter-spacing: .06em; }
   .tab:hover { border-color: var(--accent-text); }
   .tab[aria-selected="true"] { border-color: var(--accent); background: var(--surface); box-shadow: inset 0 -3px 0 var(--accent); }
@@ -193,7 +190,6 @@
   .acc details { border-block-end: 1px solid var(--border); }
   .acc details:first-child { border-block-start: 1px solid var(--border); }
   .acc summary { display: flex; align-items: center; justify-content: space-between; gap: 1rem; padding-block: 1.125rem; cursor: pointer; list-style: none; font-family: var(--font-display); font-size: 1.375rem; font-weight: 600; letter-spacing: .03em; text-transform: uppercase; }
-  [dir="rtl"] .acc summary { font-family: "Cairo", var(--font-sans); text-transform: none; font-size: 1.1875rem; }
   .acc summary::-webkit-details-marker { display: none; }
   .acc summary::after { content: "+"; font-family: var(--font-mono); font-size: 1.5rem; color: var(--accent-text); transition: transform .2s; }
   .acc details[open] summary::after { transform: rotate(45deg); }
@@ -206,7 +202,6 @@
   .est-controls { display: grid; gap: 1.25rem; align-content: start; }
   .field { display: grid; gap: .5rem; }
   .field label, .field legend { font-family: var(--font-mono); font-size: .8125rem; letter-spacing: .1em; text-transform: uppercase; color: var(--muted); }
-  [dir="rtl"] .field label, [dir="rtl"] .field legend { font-family: "Cairo", var(--font-sans); letter-spacing: 0; text-transform: none; font-size: .9375rem; }
   .range { inline-size: 100%; accent-color: var(--accent); block-size: 2rem; }
   .check { display: flex; align-items: center; gap: .75rem; min-block-size: 2.75rem; padding: .5rem .875rem; border: 1px solid var(--border); border-radius: var(--radius-sm); background: var(--surface); cursor: pointer; }
   .check input { inline-size: 1.125rem; block-size: 1.125rem; accent-color: var(--accent); }

@@ -6,7 +6,7 @@ import { hydrateIcons } from './icons.js';
 export function initContact() {
   document.querySelectorAll('[data-contact]').forEach((el) => {
     const k = el.dataset.contact;
-    if (k === 'phone') { el.textContent = contact.phone; el.setAttribute('href', contact.phoneHref); }
+    if (k === 'phone') { el.textContent = contact.phone; el.setAttribute('href', contact.phoneHref); el.setAttribute('dir', 'ltr'); }
     if (k === 'address') el.innerHTML = contact.address.map((l) => `<span class="block">${l}</span>`).join('');
     if (k === 'hours') el.textContent = contact.hours;
     if (k === 'email') { el.textContent = contact.email; el.setAttribute('href', 'mailto:' + contact.email); }

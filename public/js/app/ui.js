@@ -3,7 +3,7 @@ import { icons, hydrateIcons } from '../modules/icons.js';
 import { fromIso } from './store.js';
 
 export const dir = () => document.documentElement.getAttribute('dir') || 'ltr';
-export const locale = () => (dir() === 'rtl' ? 'ar-u-nu-latn' : 'en-US');
+export const locale = () => 'en-US'; // content is English in both directions
 export const esc = (s) => String(s ?? '').replace(/[&<>"']/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
 export const fmtDate = (iso, o = { weekday: 'short', day: 'numeric', month: 'short' }) => new Intl.DateTimeFormat(locale(), o).format(fromIso(iso));
 export const fmtLong = (iso) => fmtDate(iso, { weekday: 'long', day: 'numeric', month: 'long', year: 'numeric' });

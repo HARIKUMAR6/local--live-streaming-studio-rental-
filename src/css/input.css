@@ -76,9 +76,7 @@
 @layer base {
   html { scroll-behavior: smooth; scroll-padding-top: calc(var(--header-h) + 1rem); -webkit-text-size-adjust: 100%; }
   body { margin: 0; min-height: 100dvh; display: flex; flex-direction: column; overflow-x: clip; background: var(--bg); color: var(--text); font-family: var(--font-sans); line-height: 1.6; transition: background-color .25s, color .25s; }
-  [dir="rtl"] body { font-family: "Cairo", var(--font-sans); }
   h1, h2, h3, h4 { font-family: var(--font-display); line-height: 1.05; letter-spacing: .005em; text-transform: uppercase; }
-  [dir="rtl"] h1, [dir="rtl"] h2, [dir="rtl"] h3, [dir="rtl"] h4 { font-family: "Cairo", var(--font-sans); text-transform: none; line-height: 1.25; }
   h1 { font-size: var(--text-h1); font-weight: 700; }
   h2 { font-size: var(--text-h2); font-weight: 700; }
   h3 { font-size: var(--text-h3); font-weight: 600; }
@@ -117,7 +115,6 @@
 
   /* ---------- Controls ---------- */
   .btn { display: inline-flex; align-items: center; justify-content: center; gap: .5rem; min-block-size: 2.75rem; padding: .625rem 1.375rem; border: 1px solid transparent; border-radius: var(--radius-sm); font-family: var(--font-display); font-size: 1.0625rem; font-weight: 600; letter-spacing: .06em; text-transform: uppercase; text-decoration: none; cursor: pointer; background: var(--accent); color: var(--accent-contrast); transition: background-color .2s, color .2s, border-color .2s, transform .2s var(--ease); }
-  [dir="rtl"] .btn { font-family: "Cairo", var(--font-sans); letter-spacing: 0; text-transform: none; font-size: 1rem; }
   .btn:hover { background: color-mix(in srgb, var(--accent) 85%, white); transform: translateY(-1px); }
   .btn:active { transform: none; }
   .btn:disabled, .btn[aria-disabled="true"] { opacity: .5; pointer-events: none; }
@@ -186,7 +183,6 @@
   .mobile-menu.is-open { display: flex; }
   .mobile-menu__nav { display: flex; flex-direction: column; inline-size: 100%; max-inline-size: 36rem; margin-inline: auto; }
   .mobile-menu__nav > a, .m-acc > .dropdown__btn { inline-size: 100%; justify-content: space-between; padding: 1rem 0; border-block-end: 1px solid var(--border); border-radius: 0; color: var(--text); font-family: var(--font-display); font-size: 1.625rem; font-weight: 600; letter-spacing: .02em; text-transform: uppercase; text-decoration: none; }
-  [dir="rtl"] .mobile-menu__nav > a, [dir="rtl"] .m-acc > .dropdown__btn { font-family: "Cairo", var(--font-sans); text-transform: none; font-size: 1.375rem; }
   .mobile-menu__nav > a[aria-current="page"], .m-acc > .dropdown__btn[data-active] { color: var(--accent-text); box-shadow: none; }
   .m-acc__panel { display: flex; flex-direction: column; padding-block: .25rem .5rem; padding-inline-start: 1rem; border-inline-start: 2px solid var(--accent); margin-block: .5rem; }
   .m-acc__panel[hidden] { display: none; }
@@ -207,7 +203,6 @@
   .footer-brand { display: grid; gap: 1rem; align-content: start; justify-items: start; }
   .footer-brand p { font-size: .9375rem; }
   .footer-h { margin-block-end: 1rem; font-family: var(--font-mono); font-size: .8125rem; font-weight: 500; letter-spacing: .14em; text-transform: uppercase; color: var(--accent-text); }
-  [dir="rtl"] .footer-h { font-family: "Cairo", var(--font-sans); letter-spacing: 0; text-transform: none; font-size: 1rem; font-weight: 700; }
   .footer-links { display: grid; gap: .5rem; padding: 0; list-style: none; }
   .footer-links a, .footer-contact a { color: var(--muted); text-decoration: none; }
   .footer-links a:hover, .footer-contact a:hover { color: var(--text); text-decoration: underline; text-underline-offset: 3px; }
@@ -224,4 +219,15 @@
   .scroll-top:hover { background: color-mix(in srgb, var(--accent) 85%, white); }
   .scroll-top.is-visible { opacity: 1; visibility: visible; transform: none; }
   @media (min-width: 48rem) { .scroll-top { inset-inline-end: 1.5rem; inset-block-end: 1.5rem; } }
+}
+
+@layer components {
+  /* RTL mirrors layout only. English text keeps its reading order (punctuation, numbers)
+     and sits on the mirrored side via a physical alignment inherited from body. */
+  [dir="rtl"] body { text-align: right; }
+  [dir="rtl"] :where(h1, h2, h3, h4, p, li, dt, dd, summary, legend, label, figcaption, address, th, td, button, a, b, strong, .fact__n, .check > span, .lines li > span, .kv dd > .meta) { unicode-bidi: plaintext; }
+  [dir="rtl"] :is(.app-nav__link, .userm__panel a, .userm__panel button, .doc__table th, .doc__table td, .compare th, .compare td, .tab, .text-start) { text-align: right; }
+  @media (min-width: 48rem) { [dir="rtl"] .hero:not(.hero--contact) .hero__copy { text-align: right; } }
+  @media (min-width: 64rem) { [dir="rtl"] .hero__strip li { text-align: right; } }
+  @media (max-width: 47.999rem) { [dir="rtl"] .chain li { text-align: right; } }
 }

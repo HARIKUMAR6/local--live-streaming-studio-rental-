@@ -59,7 +59,6 @@
   .compare caption { position: absolute; inline-size: 1px; block-size: 1px; overflow: hidden; clip-path: inset(50%); }
   .compare th, .compare td { padding: .875rem 1rem; border-block-end: 1px solid var(--border); text-align: start; vertical-align: middle; }
   .compare thead th { font-family: var(--font-display); font-size: 1.25rem; font-weight: 600; letter-spacing: .03em; text-transform: uppercase; background: var(--surface-2); }
-  [dir="rtl"] .compare thead th { font-family: "Cairo", var(--font-sans); text-transform: none; font-size: 1.0625rem; }
   .compare tbody th { font-weight: 500; color: var(--muted); }
   .compare tbody tr:last-child > * { border-block-end: 0; }
   .compare .is-featured { background: color-mix(in srgb, var(--accent) 10%, transparent); }
@@ -91,7 +90,6 @@
   .info-list li { display: grid; grid-template-columns: auto 1fr; gap: .875rem; padding-block: 1.125rem; border-block-start: 1px solid var(--border); align-items: start; }
   .info-list li:last-child { border-block-end: 1px solid var(--border); }
   .info-list h3 { font-family: var(--font-mono); font-size: .75rem; letter-spacing: .12em; text-transform: uppercase; color: var(--muted); font-weight: 500; margin-block-end: .125rem; }
-  [dir="rtl"] .info-list h3 { font-family: "Cairo", var(--font-sans); letter-spacing: 0; text-transform: none; font-size: .875rem; }
   .info-list a { color: var(--text); text-underline-offset: 3px; }
   .form-card { padding: clamp(1.25rem, 1rem + 1.5vw, 2rem); border: 1px solid var(--border); border-radius: var(--radius-md); background: var(--surface); box-shadow: var(--shadow); }
   .form-grid { display: grid; gap: 1rem; }

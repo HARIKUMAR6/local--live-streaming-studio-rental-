@@ -59,7 +59,7 @@ function setCollapsed(c, persist = true) {
   const b = document.querySelector('.app-collapse');
   b.setAttribute('aria-expanded', String(!c));
   const label = c ? 'Expand sidebar' : 'Collapse sidebar';
-  b.setAttribute('data-en-aria-label', label); b.setAttribute('aria-label', dir() === 'rtl' ? tr(label) : label);
+  b.setAttribute('data-en-aria-label', label); b.setAttribute('aria-label', label);
   if (persist) { try { localStorage.setItem('sr-sidebar', c ? 'collapsed' : 'open'); } catch {} }
 }
 function updateNext() {
@@ -106,7 +106,7 @@ function printInvoice(id) {
 }
 function downloadInvoice(id) {
   const css = 'body{font:14px/1.5 system-ui,sans-serif;color:#111820;max-width:720px;margin:2rem auto;padding:0 1rem}table{width:100%;border-collapse:collapse}th,td{text-align:start;padding:.5rem;border-bottom:1px solid #ccd}.doc__head,.doc__parties{display:flex;justify-content:space-between;gap:2rem;margin-bottom:1.5rem}.totals{display:grid;gap:.25rem;margin-top:1rem}.totals div{display:flex;justify-content:space-between}.block{display:block}.status{border:1px solid #888;padding:0 .5rem;border-radius:99px}h2,h3{margin:0 0 .25rem}.ico{display:none}';
-  const html = `<!doctype html><html lang="${dir() === 'rtl' ? 'ar' : 'en'}" dir="${dir()}"><head><meta charset="utf-8"><title>Invoice ${id}</title><style>${css}</style></head><body>${V.invoiceDoc(id)}</body></html>`;
+  const html = `<!doctype html><html lang="en" dir="${dir()}"><head><meta charset="utf-8"><title>Invoice ${id}</title><style>${css}</style></head><body>${V.invoiceDoc(id)}</body></html>`;
   const a = document.createElement('a');
   a.href = URL.createObjectURL(new Blob([html], { type: 'text/html' }));
   a.download = `Invoice-${id}.html`; document.body.appendChild(a); a.click(); a.remove();
@@ -186,7 +186,8 @@ document.addEventListener('change', (e) => {
   if (e.target.closest('[data-form="prefs"]')) { const p = load().prefs; p[n] = e.target.checked; log('prefs'); save(); toast('Preferences saved'); }
 });
 document.addEventListener('themechange', (e) => { const r = document.querySelector('[name="theme"][value="' + e.detail + '"]'); if (r) r.checked = true; });
-document.addEventListener('dirchange', () => { if (!first) show(false); setCollapsed(document.getElementById('shell').dataset.collapsed === 'true', false); });
+// Direction changes layout only: no re-render, so form errors and typed values are kept.
+document.addEventListener('dirchange', (e) => { const r = document.querySelector('[name="dir"][value="' + e.detail + '"]'); if (r) r.checked = true; });
 window.addEventListener('hashchange', () => { if (authed) show(true); });
 
 /* ---------- forms ---------- */
